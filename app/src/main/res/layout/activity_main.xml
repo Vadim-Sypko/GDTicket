@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Ticket"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="РАСЧИТАТЬ СТОИМОСТЬ БИЛЕТА"
+        android:textColor="#008ACA"
+        android:textSize="21sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/nameUserIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите ваше ФИО "
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/departurePointIn"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Место отправления " />
+
+        <EditText
+            android:id="@+id/departureDateIn"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Место прибытия " />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/arrivalPointIn"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Время отправления " />
+
+        <EditText
+            android:id="@+id/arrivalDateIn"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Время прибытия " />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Стоимость билета: 900 руб"
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="ОФОРМИТЬ БИЛЕТ"
+        android:textColor="#DFE5E8"
+        android:textSize="21sp"
+        android:textStyle="bold"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
